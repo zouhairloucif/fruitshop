@@ -1,0 +1,16 @@
+easy_admin:
+  entities:
+    Category:
+
+      class: App\Entity\Category
+      label: Catégories
+      form:
+        fields:
+          - {property: 'name'}
+      list:
+        actions:
+          - {name: 'show', icon: 'eye', label: false, css_class: 'btn btn-secondary btn-sm'}
+          - {name: 'new', icon: 'plus-square-o', label: 'Nouvelle catégorie ', css_class: 'btn btn-primary btn-sm'}
+          - {name: 'edit', icon: 'pencil-square-o', label: false, css_class: 'btn btn-success btn-sm'}
+          - {name: 'delete', icon: 'trash-o', label: false, css_class: 'btn btn-danger btn-sm'}
+        title: "Liste des catégories"

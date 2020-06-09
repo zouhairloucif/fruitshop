@@ -1,0 +1,23 @@
+easy_admin:
+  entities:
+    Product:
+      class: App\Entity\Product
+      label: Produits
+      templates:
+        new: 'admin/product/new.html.twig'
+        edit: 'admin/product/edit.html.twig'
+      list:
+        actions:
+          - {name: 'show', icon: 'eye', label: false, css_class: 'btn btn-secondary btn-sm'}
+          - {name: 'new', icon: 'plus-square-o', label: 'Nouveau produit ', css_class: 'btn btn-primary btn-sm'}
+          - {name: 'edit', icon: 'pencil-square-o', label: false, css_class: 'btn btn-success btn-sm'}
+          - {name: 'delete', icon: 'trash-o', label: false, css_class: 'btn btn-danger btn-sm'}
+        title: "Liste des produits"
+        fields: [
+          {property: 'id', label: '#'},
+          {property: 'name', label: 'Nom'},
+          {property: 'price', label: 'Prix Unité'},
+          {property: 'quantity', label: 'Quantité'}
+          {property: 'online', label: 'En ligne'}
+          {property: 'category', label: 'Catégorie'}
+        ]

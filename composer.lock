@@ -1783,6 +1783,7 @@
                 "paginator",
                 "paging"
             ],
+            "abandoned": "babdev/pagerfanta",
             "time": "2019-07-17T20:56:16+00:00"
         },
         {
