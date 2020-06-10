@@ -1,0 +1,8 @@
+easy_admin:
+  design:
+    menu:
+      - label: 'Gestion du shop'
+        icon: 'cog'
+        children:
+          - {entity: 'Product', icon: 'cube', label: 'Produits'}
+          - {entity: 'Category', icon: 'filter', label: 'Catégories'}
