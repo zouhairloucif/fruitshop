@@ -13,3 +13,9 @@ easy_admin:
           - {name: 'edit', icon: 'pencil-square-o', label: false, css_class: 'btn btn-success btn-sm'}
           - {name: 'delete', icon: 'trash-o', label: false, css_class: 'btn btn-danger btn-sm'}
         title: "Liste des catégories"
+        fields: [
+        {property: 'id', label: '#'},
+        {property: 'name', label: 'Catégorie'},
+        {property: 'products', label: 'Nombres de produits'}
+        ]
+      new:
